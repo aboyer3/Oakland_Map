@@ -23,6 +23,7 @@ var boroughs = L.geoJson(null, {
          bounds: layer.getBounds()
      });
  }
+boroughs.addTo(map);
 });
 
  $.getJSON("assets/geoJSON/boroughs.geojson", function(data) {
