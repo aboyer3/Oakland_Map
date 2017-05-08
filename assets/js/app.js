@@ -11,7 +11,7 @@ map.on('load', function () {
         "type": "fill",
         'source': {
             'type': 'geojson',
-            "data": "./assets/geoJSON/boroughs.geojson"}})
+            "data": "assets/geoJSON/boroughs.geojson"}})
       });
 
 /*var boroughs = L.geoJson(null, {
