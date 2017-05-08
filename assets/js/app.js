@@ -1,3 +1,5 @@
+var map, featureList, boroughSearch = [];
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWJveWVyIiwiYSI6ImNpZ3Y1bTN1cTBod2x2cW0zejJyeDRwOWUifQ.pNbGU-s0cDtU_PW9pBsL4w';
 var map = new mapboxgl.Map({
 container: 'map',
