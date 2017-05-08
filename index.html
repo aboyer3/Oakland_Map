@@ -1,17 +1,20 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css">
-    <link rel="stylesheet" href="https://erasermap.com/map/css/main.d844fd58.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
     <div id="map"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
     <script src="https://mapzen.com/tangram/tangram.min.js"></script>
     <script src="https://erasermap.com/map/bundle.min.js"></script>
+    <div id='map' style='width: 400px; height: 300px;'></div>
     <script>
-      var map = L.Mapzen.map('map');
-      map.setupScene('https://mapzen.com/carto/bubble-wrap-style/2/bubble-wrap.yaml');
-      map.setView([40.706213526877455, -74.0044641494751], 15);
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWJveWVyIiwiYSI6ImNpZ3Y1bTN1cTBod2x2cW0zejJyeDRwOWUifQ.pNbGU-s0cDtU_PW9pBsL4w';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v9'
+    });
     </script>
   </body>
 </html>
