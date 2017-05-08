@@ -6,32 +6,25 @@ container: 'map',
 style: 'mapbox://styles/mapbox/streets-v9'
 });
 
-var highlight = L.geoJson(null);
-var highlightStyle = {
-  stroke: false,
-  fillColor: "#00FFFF",
-  fillOpacity: 0.7,
-  radius: 10
-};
-
 var boroughs = L.geoJson(null, {
-  style: function (feature) {
-    return {
-      color: "black",
-      fill: false,
-      opacity: 1,
-      clickable: false
-    };
-  },
-  onEachFeature: function (feature, layer) {
-    boroughSearch.push({
-      name: layer.feature.properties.BoroName,
-      source: "Boroughs",
-      id: L.stamp(layer),
-      bounds: layer.getBounds()
-    });
-  }
+ style: function(feature) {
+     return {
+         color: "black",
+         fill: false,
+         opacity: 1,
+         clickable: false
+     };
+ },
+ onEachFeature: function(feature, layer) {
+     boroughSearch.push({
+         name: layer.feature.properties.BoroName,
+         source: "Boroughs",
+         id: L.stamp(layer),
+         bounds: layer.getBounds()
+     });
+ }
 });
-$.getJSON("assets/geoJSON/boroughs.geojson", function (data) {
-  boroughs.addData(data);
-});
+
+ $.getJSON("data/boroughs.geojson", function(data) {
+     boroughs.addData(data);
+ });
