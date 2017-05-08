@@ -16,8 +16,8 @@ map.on('load', function () {
           'paint': {
             'fill-color': '#088',
             'fill-opacity': 0.8
-          },'water')
-          
+          }}, 'water');
+
       });
 
 
