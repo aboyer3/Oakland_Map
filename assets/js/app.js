@@ -11,12 +11,11 @@ map.on('load', function () {
         "type": "fill",
         'source': {
             'type': 'geojson',
-            "data": "/assets/geoJSON/boroughs.geojson"}})
+            "data": "github.com/aboyer3/Oakland_Map/blob/master/assets/geoJSON/boroughs.geojson"}})
       });
 
 /*var boroughs = L.geoJson(null, {
  style: function(feature) {
-     return {
          color: "black",
          fill: false,
          opacity: 1,
