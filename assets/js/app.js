@@ -11,8 +11,15 @@ map.on('load', function () {
         "type": "fill",
         'source': {
             'type': 'geojson',
-            "data": "assets/geoJSON/boroughs.geojson"}})
+            "data": "assets/geoJSON/boroughs.geojson"
+          },
+          'paint': {
+            'fill-color': '#088',
+            'fill-opacity': 0.8
+          },'water')
       });
+
+
 
 /*var boroughs = L.geoJson(null, {
  style: function(feature) {
