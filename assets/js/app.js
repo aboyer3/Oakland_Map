@@ -9,11 +9,11 @@ zoom: 11.90 // starting zoom
 });
 map.on('load', function () {
   map.addLayer({
-        "id": "bourough",
+        "id": "elementary",
         "type": "fill",
         'source': {
             'type': 'geojson',
-            "data": "assets/geoJSON/boroughs.geojson"
+            "data": "assets/geoJSON/ES_BOUNDS_1617.json"
           },
           'paint': {
             'fill-color': '#088',
