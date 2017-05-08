@@ -28,5 +28,3 @@ var boroughs = L.geoJson(null, {
  $.getJSON("assets/geoJSON/boroughs.geojson", function(data) {
      boroughs.addData(data);
  });
-
- boroughs.addTo(map);
