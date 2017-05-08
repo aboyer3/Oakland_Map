@@ -5,8 +5,16 @@ var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v9'
 });
+map.on('load', function () {
+  map.addLayer({
+        "id": "bourough",
+        "type": "fill",
+        'source': {
+            'type': 'geojson',
+            "data": "/assets/geoJSON/boroughs.geojson"}})
+      });
 
-var boroughs = L.geoJson(null, {
+/*var boroughs = L.geoJson(null, {
  style: function(feature) {
      return {
          color: "black",
@@ -27,4 +35,4 @@ var boroughs = L.geoJson(null, {
 
  $.getJSON("assets/geoJSON/boroughs.geojson", function(data) {
      boroughs.addData(data);
- });
+ });*/
