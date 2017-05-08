@@ -6,6 +6,14 @@ container: 'map',
 style: 'mapbox://styles/mapbox/streets-v9'
 });
 
+var highlight = L.geoJson(null);
+var highlightStyle = {
+  stroke: false,
+  fillColor: "#00FFFF",
+  fillOpacity: 0.7,
+  radius: 10
+};
+
 var boroughs = L.geoJson(null, {
   style: function (feature) {
     return {
