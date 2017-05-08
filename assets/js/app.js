@@ -3,7 +3,9 @@ var map, featureList, boroughSearch = [];
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWJveWVyIiwiYSI6ImNpZ3Y1bTN1cTBod2x2cW0zejJyeDRwOWUifQ.pNbGU-s0cDtU_PW9pBsL4w';
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/mapbox/streets-v9'
+style: 'mapbox://styles/mapbox/streets-v9',
+center: [-122.265244, 37.791167], // starting position
+zoom: 11.90 // starting zoom
 });
 map.on('load', function () {
   map.addLayer({
