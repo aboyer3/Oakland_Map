@@ -15,12 +15,19 @@ map.on('load', function () {
             'type': 'geojson',
             "data": "assets/geoJSON/ES_BOUNDS_1617.json"
           },
-          'paint': {
-            'fill-color': '#088',
-            'fill-opacity': 0.8
+          'paint': function(feature) {
+              switch (feature.properties.Name) {
+                  case 'CARL B. MUNCK':
+                    return {color: "#ff0000"};
+                  default:
+                    return {color: "black"};
+                  }
+
           }}, 'water');
 
       });
+
+
 
 
 
