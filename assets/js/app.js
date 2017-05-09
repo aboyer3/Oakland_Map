@@ -7,7 +7,7 @@ style: 'mapbox://styles/mapbox/streets-v9',
 center: [-122.265244, 37.791167], // starting position
 zoom: 11.90 // starting zoom
 });
-map.on('load', function () {
+/*map.on('load', function () {
   map.addLayer({
         "id": "elementary",
         "type": "fill",
@@ -18,37 +18,34 @@ map.on('load', function () {
           'paint': function(feature) {
               switch (feature.properties.Name) {
                   case 'CARL B. MUNCK':
-                    return {color: "#ff0000"};
+                    return {color: "#ff0000"}
                   default:
-                    return {color: "black"};
-                  }
+                  ;}
 
           }}, 'water');
 
+      });*/
+
+      var boroughs = L.geoJson(null, {
+        style: function (feature) {
+          return {
+            color: "black",
+            fill: false,
+            opacity: 1,
+            clickable: false
+          };
+        },
+        onEachFeature: function (feature, layer) {
+          boroughSearch.push({
+            name: layer.feature.properties.BoroName,
+            source: "Boroughs",
+            id: L.stamp(layer),
+            bounds: layer.getBounds()
+          });
+        }
       });
-
-
-
-
-
-/*var boroughs = L.geoJson(null, {
- style: function(feature) {
-         color: "black",
-         fill: false,
-         opacity: 1,
-         clickable: false
-     };
- },
- onEachFeature: function(feature, layer) {
-     boroughSearch.push({
-         name: layer.feature.properties.BoroName,
-         source: "Boroughs",
-         id: L.stamp(layer),
-         bounds: layer.getBounds()
-     });
- }
-});
 
  $.getJSON("assets/geoJSON/boroughs.geojson", function(data) {
      boroughs.addData(data);
- });*/
+     map.addLayer(boroughs);
+ });
