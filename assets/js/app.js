@@ -7,8 +7,8 @@ style: 'mapbox://styles/mapbox/streets-v9',
 center: [-122.265244, 37.791167], // starting position
 zoom: 11.90 // starting zoom
 });
-/*map.on('load', function () {
-  map.addLayer({
+map.on('load', function () {
+  /*map.addLayer({
         "id": "elementary",
         "type": "fill",
         'source': {
@@ -48,4 +48,5 @@ zoom: 11.90 // starting zoom
  $.getJSON("assets/geoJSON/boroughs.geojson", function(data) {
      boroughs.addData(data);
      map.addLayer(boroughs);
+ });
  });
