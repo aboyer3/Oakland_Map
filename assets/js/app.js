@@ -36,7 +36,7 @@ map.on('load', function () {
           };
         },
         onEachFeature: function (feature, layer) {
-          borough.push({
+          boroughs.push({
             name: layer.feature.properties.BoroName,
             source: "Boroughs",
             id: L.stamp(layer),
