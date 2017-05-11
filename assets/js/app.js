@@ -15,17 +15,14 @@ map.on('load', function () {
             'type': 'geojson',
             "data": "/assets/geoJSON/ES_BOUNDS_1617.json"
           },
-          'paint': function(feature) {
-              switch (feature.properties.Name) {
-                  case 'CARL B. MUNCK':
-                    return {color: "#ff0000"};
-                  default:
-                }
+          'paint': {
+            'fill-color': 'rgba(61,153,80,0.55)'
+
 
           }}, 'water');
 
       });
-map.addLayer(boroughs);
+
 /*
       var boroughs = L.geoJson(null, {
         style: function (feature) {
