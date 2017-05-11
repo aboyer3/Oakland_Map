@@ -7,7 +7,7 @@ style: 'mapbox://styles/mapbox/streets-v9',
 center: [-122.265244, 37.791167], // starting position
 zoom: 11.90 // starting zoom
 });
-map.on('load', function () {
+//map.on('load', function () {
   /*map.addLayer({
         "id": "elementary",
         "type": "fill",
@@ -26,6 +26,15 @@ map.on('load', function () {
 
       });*/
 
+  var myLayer = L.mapbox.featureLayer()
+  .loadURL('assets/geoJSON/ES_BOUNDS_1617.json')
+  .on('ready', function() {
+    myLayer.eachLayer(function(layer) {
+      layer.bindPopup(layer.features.properties.name);
+    });
+  })
+  .addTo(map);
+/*
       var boroughs = L.geoJson(null, {
         style: function (feature) {
           return {
@@ -36,7 +45,7 @@ map.on('load', function () {
           };
         },
         onEachFeature: function (feature, layer) {
-          boroughs.push({
+          boroughSearch.push({
             name: layer.feature.properties.BoroName,
             source: "Boroughs",
             id: L.stamp(layer),
@@ -49,4 +58,4 @@ map.on('load', function () {
      boroughs.addData(data);
      map.addLayer(boroughs);
  });
- });
+ });*/
