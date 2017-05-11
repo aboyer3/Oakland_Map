@@ -25,7 +25,7 @@ map.on('load', function () {
           }}, 'water');
 
       });
-
+map.addLayer(boroughs);
 /*
       var boroughs = L.geoJson(null, {
         style: function (feature) {
