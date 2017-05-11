@@ -13,7 +13,7 @@ map.on('load', function () {
         "type": "fill",
         'source': {
             'type': 'geojson',
-            "data": "/assets/geoJSON/ES_BOUNDS_1617.json"
+            "data": "assets/geoJSON/ES_BOUNDS_1617.json"
           },
           'paint': {
             'fill-color': 'rgba(61,153,80,0.55)'
