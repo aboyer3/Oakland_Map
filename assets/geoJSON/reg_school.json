@@ -1,4 +1,4 @@
-{"type":"FeatureCollection","features":[
+
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-122.2045070001524,37.7885919997999]},"properties":{"latcod":37.788592,"loncod":-122.204507,"schnam":"ALLENDALE ELEMENTARY","mstree":"3670 PENNIMAN AVE.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94619","SCHTYPE":"ES"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-122.24319999963798,37.850380000087625]},"properties":{"latcod":37.85038,"loncod":-122.2432,"schnam":"CHABOT ELEMENTARY","mstree":"6686 CHABOT RD.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94618","SCHTYPE":"ES"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-122.23745100011023,37.800139000271315]},"properties":{"latcod":37.800139,"loncod":-122.237451,"schnam":"BELLA VISTA ELEMENTARY","mstree":"1025 EAST 28TH ST.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94610","SCHTYPE":"ES"}},
@@ -91,4 +91,3 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-122.27385700027354,37.81864199975094]},"properties":{"latcod":37.818642,"loncod":-122.273857,"schnam":"HOME AND HOSPITAL PROGRAM","mstree":"2850 WEST ST.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94608","SCHTYPE":""}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-122.25871800001408,37.79628399967923]},"properties":{"latcod":37.796284,"loncod":-122.258718,"schnam":"INFANT AND PRESCHOOL PROGRAM","mstree":"1025 SECOND AVE.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94606","SCHTYPE":""}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-122.16250300007405,37.75862899994426]},"properties":{"latcod":37.758629,"loncod":-122.162503,"schnam":"CASTLEMONT HIGH","mstree":"8601 MACARTHUR BLVD.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94605","SCHTYPE":"HS"}}
-]}
