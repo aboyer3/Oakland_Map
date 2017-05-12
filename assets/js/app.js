@@ -17,7 +17,9 @@ map.on('load', function () {
             "data": "assets/geoJSON/blue_bnds.json"
           },
           'paint': {
-            'fill-color': '#4ABDAC'
+            'fill-color': '#4ABDAC',
+            'fill-opacity': 0.8
+
 
 
           }}, 'water');
@@ -31,8 +33,8 @@ map.on('load', function () {
         "data": "assets/geoJSON/orange_bnds.json"
       },
       'paint': {
-        'fill-color': '#FC4A1A'
-
+        'fill-color': '#FC4A1A',
+        'fill-opacity': 0.8
 
       }}, 'water');
 
