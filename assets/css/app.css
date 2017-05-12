@@ -176,13 +176,12 @@ input[type="radio"], input[type="checkbox"] {
   }
 }
 
-
- #menu {
+#menu {
         background: #fff;
         position: absolute;
         z-index: 1;
-        top: 10px;
-        right: 10px;
+        top: 60px;
+        right: 50px;
         border-radius: 3px;
         width: 120px;
         border: 1px solid rgba(0,0,0,0.4);
@@ -191,7 +190,7 @@ input[type="radio"], input[type="checkbox"] {
 
     #menu a {
         font-size: 13px;
-        color: #404040;
+        color: #3D9B35;
         display: block;
         margin: 0;
         padding: 0;
@@ -211,10 +210,15 @@ input[type="radio"], input[type="checkbox"] {
     }
 
     #menu a.active {
-        background-color: #3887be;
+        background-color: #4D8951;
         color: #ffffff;
     }
 
     #menu a.active:hover {
-        background: #3074a4;
+        background: #3D9B35;
+
+    }
+
+    .navbar-header{
+      background: #4D8951;
     }

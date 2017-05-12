@@ -132,7 +132,11 @@ map.on('load', function () {
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
-        }
+        },"paint": {
+                    "text-color": "#202",
+                    "text-halo-color": "#fff",
+                    "text-halo-width": 2
+                }
               });
                      map.addLayer(
                   {
@@ -148,7 +152,11 @@ map.on('load', function () {
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
-        }
+        },"paint": {
+                    "text-color": "#202",
+                    "text-halo-color": "#fff",
+                    "text-halo-width": 2
+                }
               });
 
            map.addLayer(
@@ -165,7 +173,11 @@ map.on('load', function () {
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
-        }
+        },"paint": {
+                    "text-color": "#202",
+                    "text-halo-color": "#fff",
+                    "text-halo-width": 2
+                }
               });
 
 map.on('click', 'blue-bnds', function (e) {
