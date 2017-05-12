@@ -102,7 +102,7 @@ map.on('load', function () {
                             "data": "assets/geoJSON/reg_school.json"
                           },
                           'paint': {
-                            'fill-color': red
+                            'fill-color': 'red'
 
                           }});
 
