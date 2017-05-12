@@ -22,7 +22,7 @@ map.on('load', function () {
 
 
 
-          }});
+          }},'streets');
 
   map.addLayer(
   {
@@ -93,6 +93,19 @@ map.on('load', function () {
                         'fill-opacity': 0.5
 
                       }});
+                      map.addLayer(
+                      {
+                        "id": "reg_school",
+                        "type": "Point",
+                        'source': {
+                            'type': 'geojson',
+                            "data": "assets/geoJSON/reg_school.json"
+                          },
+                          'paint': {
+                            'fill-color': red
+
+                          }});
+
       });
 
 
