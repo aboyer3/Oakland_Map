@@ -17,7 +17,7 @@ map.on('load', function () {
             "data": "assets/geoJSON/blue_bnds.json"
           },
           'paint': {
-            'fill-color': '#28ABE5',
+            'fill-color': '#0BCBF5',
             'fill-opacity': 0.5
 
 
@@ -33,7 +33,7 @@ map.on('load', function () {
         "data": "assets/geoJSON/orange_bnds.json"
       },
       'paint': {
-        'fill-color': '#E8B61C',
+        'fill-color': '#34414F',
         'fill-opacity': 0.5
 
       }}, 'water');
@@ -47,7 +47,7 @@ map.on('load', function () {
             "data": "assets/geoJSON/green_bnds.json"
           },
           'paint': {
-            'fill-color': '#1DDB99',
+            'fill-color': '#C0EF74',
             'fill-opacity': 0.5
 
           }}, 'water');
@@ -61,7 +61,7 @@ map.on('load', function () {
                 "data": "assets/geoJSON/purp_bnds.json"
               },
               'paint': {
-                'fill-color': '#F5EBC8',
+                'fill-color': '#4AAAA7',
                 'fill-opacity': 0.5
 
               }}, 'water');
@@ -75,7 +75,7 @@ map.on('load', function () {
                     "data": "assets/geoJSON/red_bnds.json"
                   },
                   'paint': {
-                    'fill-color': '#DD3142',
+                    'fill-color': '#ED1D26',
                     'fill-opacity': 0.5
 
                   }}, 'water');
@@ -89,7 +89,7 @@ map.on('load', function () {
                         "data": "assets/geoJSON/yellow_bnds.json"
                       },
                       'paint': {
-                        'fill-color': '#C4D6CB',
+                        'fill-color': '#7D7F81',
                         'fill-opacity': 0.5
 
                       }}, 'water');
