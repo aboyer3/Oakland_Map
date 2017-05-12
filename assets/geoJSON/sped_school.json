@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.16679499958462,37.75967899965163]},"properties":{"latcod":37.759679,"loncod":-122.166795,"schnam":"HILLSIDE ACADEMY","mstree":"2369 84TH AVE.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94605","SCHTYPE":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.27385700027354,37.81864199975094]},"properties":{"latcod":37.818642,"loncod":-122.273857,"schnam":"YOUNG ADULT PROGRAM","mstree":"2850 WEST ST.","mcity":"OAKLAND","state_abbr":"CA","mzip":"94608","SCHTYPE":""}}
+]}
