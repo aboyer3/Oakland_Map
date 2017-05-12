@@ -7,6 +7,9 @@ style: '\mapbox://styles/mapbox/light-v9',
 center: [-122.265244, 37.791167], // starting position
 zoom: 11.90 // starting zoom
 });
+
+map.addControl(new mapboxgl.NavigationControl());
+
 map.on('load', function () {
   map.addLayer(
     {
@@ -176,6 +179,8 @@ map.on('click', 'blue-bnds', function (e) {
       });
 
       var toggleableLayerIds = [ 'alt-school', 'charter-school','reg-school','sped-school' ];
+      var layer_label = [ 'Alternative', 'Charter','OUSD School','Special Education' ];
+
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
@@ -183,10 +188,11 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
     var link = document.createElement('a');
     link.href = '#';
     link.className = 'active';
-    link.textContent = id;
+    link.textContent = layer_label[i];
+    link.id = id;
 
     link.onclick = function (e) {
-        var clickedLayer = this.textContent;
+        var clickedLayer = this.id;
         e.preventDefault();
         e.stopPropagation();
 
