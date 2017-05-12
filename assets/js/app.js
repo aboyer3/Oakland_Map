@@ -79,7 +79,7 @@ map.on('load', function () {
                   },
                   'paint': {
                     'fill-color': '#ED1D26',
-                    'fill-opacity': 0.5
+                    'fill-opacity': 0.2
 
                   }});
 
@@ -108,6 +108,7 @@ map.on('load', function () {
                         "layout": {
             "icon-image": "marker-15",
             "text-field": "{schnam}",
+            "text-size": 12,
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
             "text-anchor": "top"
@@ -129,9 +130,11 @@ map.on('load', function () {
                         "layout": {
             "icon-image": "marker-15",
             "text-field": "{schnam}",
+            "text-size": 12,
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
-            "text-anchor": "top"
+            "text-anchor": "top",
+            'visibility': 'none'
         },"paint": {
                     "text-color": "#202",
                     "text-halo-color": "#fff",
@@ -149,9 +152,11 @@ map.on('load', function () {
                         "layout": {
             "icon-image": "marker-15",
             "text-field": "{schnam}",
+            "text-size": 12,
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
-            "text-anchor": "top"
+            "text-anchor": "top",
+            'visibility': 'none'
         },"paint": {
                     "text-color": "#202",
                     "text-halo-color": "#fff",
@@ -170,9 +175,11 @@ map.on('load', function () {
                         "layout": {
             "icon-image": "marker-15",
             "text-field": "{schnam}",
+            "text-size": 12,
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0.6],
-            "text-anchor": "top"
+            "text-anchor": "top",
+            'visibility': 'none'
         },"paint": {
                     "text-color": "#202",
                     "text-halo-color": "#fff",
