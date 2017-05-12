@@ -17,8 +17,8 @@ map.on('load', function () {
             "data": "assets/geoJSON/blue_bnds.json"
           },
           'paint': {
-            'fill-color': '#4ABDAC',
-            'fill-opacity': 0.8
+            'fill-color': '#28ABE5',
+            'fill-opacity': 0.5
 
 
 
@@ -33,11 +33,66 @@ map.on('load', function () {
         "data": "assets/geoJSON/orange_bnds.json"
       },
       'paint': {
-        'fill-color': '#FC4A1A',
-        'fill-opacity': 0.8
+        'fill-color': '#E8B61C',
+        'fill-opacity': 0.5
 
       }}, 'water');
 
+      map.addLayer(
+      {
+        "id": "green-bnds",
+        "type": "fill",
+        'source': {
+            'type': 'geojson',
+            "data": "assets/geoJSON/green_bnds.json"
+          },
+          'paint': {
+            'fill-color': '#1DDB99',
+            'fill-opacity': 0.5
+
+          }}, 'water');
+
+          map.addLayer(
+          {
+            "id": "purp-bnds",
+            "type": "fill",
+            'source': {
+                'type': 'geojson',
+                "data": "assets/geoJSON/purp_bnds.json"
+              },
+              'paint': {
+                'fill-color': '#F5EBC8',
+                'fill-opacity': 0.5
+
+              }}, 'water');
+
+              map.addLayer(
+              {
+                "id": "red-bnds",
+                "type": "fill",
+                'source': {
+                    'type': 'geojson',
+                    "data": "assets/geoJSON/red_bnds.json"
+                  },
+                  'paint': {
+                    'fill-color': '#DD3142',
+                    'fill-opacity': 0.5
+
+                  }}, 'water');
+
+                  map.addLayer(
+                  {
+                    "id": "yellow-bnds",
+                    "type": "fill",
+                    'source': {
+                        'type': 'geojson',
+                        "data": "assets/geoJSON/yellow_bnds.json"
+                      },
+                      'paint': {
+                        'fill-color': '#C4D6CB',
+                        'fill-opacity': 0.5
+
+                      }}, 'water');
       });
 
 
