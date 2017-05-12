@@ -8,20 +8,36 @@ center: [-122.265244, 37.791167], // starting position
 zoom: 11.90 // starting zoom
 });
 map.on('load', function () {
-  map.addLayer({
-        "id": "elementary",
+  map.addLayer(
+    {
+        "id": "blue-bnds",
         "type": "fill",
         'source': {
             'type': 'geojson',
-            "data": "assets/geoJSON/ES_BOUNDS_1617.json"
+            "data": "assets/geoJSON/blue_bnds.json"
           },
           'paint': {
-            'fill-color': 'rgba(61,153,80,0.55)'
+            'fill-color': '#4ABDAC'
 
 
           }}, 'water');
 
+  map.addLayer(
+  {
+    "id": "orange-bnds",
+    "type": "fill",
+    'source': {
+        'type': 'geojson',
+        "data": "assets/geoJSON/orange_bnds.json"
+      },
+      'paint': {
+        'fill-color': '#FC4A1A'
+
+
+      }}, 'water');
+
       });
+
 
 /*
       var boroughs = L.geoJson(null, {
