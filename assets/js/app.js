@@ -3,7 +3,7 @@ var map, featureList, boroughSearch = [];
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWJveWVyIiwiYSI6ImNpZ3Y1bTN1cTBod2x2cW0zejJyeDRwOWUifQ.pNbGU-s0cDtU_PW9pBsL4w';
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/mapbox/light-v9',
+style: '\mapbox://styles/mapbox/light-v9',
 center: [-122.265244, 37.791167], // starting position
 zoom: 11.90 // starting zoom
 });
@@ -22,7 +22,7 @@ map.on('load', function () {
 
 
 
-          }}, 'water');
+          }});
 
   map.addLayer(
   {
@@ -36,7 +36,7 @@ map.on('load', function () {
         'fill-color': '#34414F',
         'fill-opacity': 0.5
 
-      }}, 'water');
+      }});
 
       map.addLayer(
       {
@@ -50,7 +50,7 @@ map.on('load', function () {
             'fill-color': '#C0EF74',
             'fill-opacity': 0.5
 
-          }}, 'water');
+          }});
 
           map.addLayer(
           {
@@ -64,7 +64,7 @@ map.on('load', function () {
                 'fill-color': '#4AAAA7',
                 'fill-opacity': 0.5
 
-              }}, 'water');
+              }});
 
               map.addLayer(
               {
@@ -78,7 +78,7 @@ map.on('load', function () {
                     'fill-color': '#ED1D26',
                     'fill-opacity': 0.5
 
-                  }}, 'water');
+                  }});
 
                   map.addLayer(
                   {
@@ -92,7 +92,7 @@ map.on('load', function () {
                         'fill-color': '#7D7F81',
                         'fill-opacity': 0.5
 
-                      }}, 'water');
+                      }});
       });
 
 
